@@ -73,7 +73,9 @@ UI库名为IceBergUI：因为最近在看冰山上的来客
   bug：fix: + 组件名 + 修复功能描述
        例如: fix: Tree组件修复父级收起无过渡效果
   review：这个不做要求，可以直接写code-review
+  conflict: 直接git commit 不加任何备注，这边便于追踪
   ```
+
 
 ### code
 
