@@ -1,0 +1,32 @@
+@import "./common/_var.scss";
+@import "./mixins/mixins.scss";
+
+$color-list: (
+  primary: $primary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+);
+
+$color-active-list: (
+  primary: $primary-active,
+  success: $success-active,
+  info: $info-active,
+  warning: $warning-active,
+  danger: $danger-active,
+);
+
+@include blockquote(button) {
+  @include status($color-list);
+  padding: 5px 20px;
+  outline: none;
+  border: 0;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  box-shadow: $default-box-shadow;
+  color: $default-font-color;
+  &:active {
+    @include status($color-active-list);
+  }
+}
