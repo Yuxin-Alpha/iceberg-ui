@@ -3,12 +3,18 @@
     <ic-button></ic-button>
     <ic-button-group></ic-button-group>
     <ic-icon></ic-icon>
+    <Button></Button>
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-export default defineComponent({});
+import Button from "./examples/button";
+export default defineComponent({
+  components: {
+    Button,
+  },
+});
 </script>
 
 <style lang="scss"></style>

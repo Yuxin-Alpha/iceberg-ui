@@ -1,0 +1,16 @@
+$namespace: "ic-";
+
+@mixin blockquote($block) {
+  $blockName: $namespace + $block !global;
+  .#{$blockName} {
+    @content;
+  }
+}
+
+@mixin status($color) {
+  @each $key, $value in $color {
+    &.#{$blockName}-#{$key} {
+      background: #{$value};
+    }
+  }
+}
